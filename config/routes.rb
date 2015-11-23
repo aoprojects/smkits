@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  root "pages#index"
+  get "about" => "pages#about"
+  get "privacy_policy" => "pages#privacy_policy"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

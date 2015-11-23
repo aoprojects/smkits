@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-<!-- written by Alison Ostendorf
-	Owned by Virgo Ventures LLC
-    Project: Stage Management Kits
-    contact: aostendorf@gmail.com -->
+	<!-- written by Alison Ostendorf
+		Owned by Virgo Ventures LLC
+	    Project: Stage Management Kits
+	    contact: aostendorf@gmail.com -->
 
 
-  <title>Stage Management Kits</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	  <title>Stage Management Kits</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
 
-  <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Stage management kits, supplies, and specialty gift sets." content="Stage Management Kits">
+	  <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="Stage management kits, supplies, and specialty gift sets." content="Stage Management Kits">
 
-</head>
-<body>
+	    <%= javascript_include_tag :defaults %>
 
-<%= yield %>
+	</head>
+	<body class="<%= controller_name %><%= action_name%>">
 
-</body>
+		<%= render 'layouts/navbar' %>
+
+		<%= yield %>
+
+		<footer class ="footer">
+			<div class = "container">
+				<div class = "row">
+					<div class = "col-sm-6">
+						<p class = "footer-items">Stage Management Kits</p>
+						<p class = "footer-items">Created, Sold, and Distributed by Virgo Ventures LLC %></p>
+					</div><!-- end col -->
+					<div class = "col-sm-6">
+						<p class = "footer-items"><%= link_to 'Contact Us', about_path %></p>
+						<p class = "footer-items"><%= link_to 'Privacy Policy', privacy_policy_path %></p>
+					</div><!-- end col -->
+				</div><!-- end row -->>
+			</div><!-- This should be a sticky footer -->
+	</footer>
+
+	</body>
 </html>
