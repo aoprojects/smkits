@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Product{id: 1, product_name: "Full SM Kit", contents: "List of contents should go here and they should be in list form", details: "One kit personally pacakged for each stage manager, by our stage manager", price: 750, currency: "USD"}
+Product.create(id: 1, product_name: "Full SM Kit", contents: "List of contents should go here and they should be in list form", details: "One kit personally pacakged for each stage manager, by our stage manager", price: 750, currency: "USD")
