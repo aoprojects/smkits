@@ -25,7 +25,11 @@
 
 		<%= render 'layouts/navbar' %>
 
-		<%= yield %>
+		<div class="container" id="main-container">
+
+			<%= yield %>
+
+		</div><!-- end #main-container -->
 
 		<footer class ="footer">
 			<div class = "container">
@@ -40,7 +44,15 @@
 					</div><!-- end col -->
 				</div><!-- end row -->>
 			</div><!-- This should be a sticky footer -->
-	</footer>
+		</footer>
 
 	</body>
 </html>
+
+<!-- imported sticky footer code -->
+
+
+
+
+
+

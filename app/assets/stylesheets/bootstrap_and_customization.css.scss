@@ -1,4 +1,17 @@
 
+/*
+Project by Alison Ostendorf at Virgo Ventures LLC
+aostendorf@gmail.com
+Project name: Stage Management Kits
+*/
+
+/* insert any SASS edits to bootstrap below, before importing */
+
+$navbar-default-bg: #90E832;
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 
 .footer-items {
@@ -7,4 +20,8 @@
 
 .nav-text {
 	
+}
+
+#main-container {
+	width: 80%;
 }
