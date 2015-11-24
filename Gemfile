@@ -34,7 +34,10 @@ gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 # stripe for payment processing
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
-
+# for seeing error messages better
+gem 'better_errors', group: :development
+# to add features to better_errors gem
+gem 'binding_of_caller', group: :development
 
 
 # Use ActiveModel has_secure_password
